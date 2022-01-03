@@ -1,24 +1,22 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+//importing components
+import {FetchingData} from './components/fetchingData';
+import Searchbar from './components/searchBar';
+import ProductContainer from './components/productContainer';
+import { ProductContextContainer } from './components/productsContext';
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <div className='app'>
+      <FetchingData>
+        <ProductContextContainer>
+          <Searchbar />
+          <ProductContainer />
+        </ProductContextContainer>
+      </FetchingData>
+   </div>
   );
 }
 

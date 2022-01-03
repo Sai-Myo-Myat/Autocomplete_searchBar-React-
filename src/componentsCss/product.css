@@ -1,0 +1,15 @@
+.product {
+    width: 50%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px;
+    align-items: center;
+    border: .5px solid blue;
+}
+
+.product img {
+    height: 100%;
+    width: 100px;
+}
